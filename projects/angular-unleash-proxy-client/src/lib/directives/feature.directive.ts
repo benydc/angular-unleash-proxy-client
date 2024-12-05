@@ -1,7 +1,8 @@
 import { Directive, inject, OnDestroy, OnInit } from '@angular/core';
 import { UnleashService } from '../unleash.service';
 import { NgIf } from '@angular/common';
-import { Observable, ReplaySubject, Subject, switchMap, takeUntil, tap } from 'rxjs';
+import { Observable, ReplaySubject, Subject } from 'rxjs';
+import { switchMap, takeUntil, tap } from 'rxjs/operators';
 
 @Directive()
 export abstract class FeatureDirective extends NgIf<boolean> implements OnInit, OnDestroy {
