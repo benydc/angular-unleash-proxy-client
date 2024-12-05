@@ -1,6 +1,6 @@
 import { APP_INITIALIZER, EnvironmentProviders, inject, InjectionToken, makeEnvironmentProviders } from '@angular/core';
 import { UnleashService } from './unleash.service';
-import { take, tap } from 'rxjs';
+import { take, tap } from 'rxjs/operators';
 import { IConfig as UnleashConfig } from 'unleash-proxy-client';
 
 export const UNLEASH_CONFIG = new InjectionToken<UnleashConfig>('Unleash config');
