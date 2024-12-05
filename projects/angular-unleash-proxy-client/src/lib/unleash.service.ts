@@ -1,7 +1,8 @@
 import { Inject, Injectable } from '@angular/core';
 import { EVENTS, IConfig as UnleashConfig, UnleashClient } from 'unleash-proxy-client';
 import { UNLEASH_CONFIG } from './unleash.initializer';
-import { distinctUntilChanged, fromEvent, map, Observable, shareReplay, startWith } from 'rxjs';
+import { Observable } from 'rxjs';
+import { distinctUntilChanged, fromEvent, map, shareReplay, startWith } from 'rxjs/operators';
 import { ImpressionEvent } from './events/impression';
 
 @Injectable({
