@@ -1,0 +1,15 @@
+import { Router } from '@angular/router';
+import { inject } from '@angular/core';
+export function redirectResult(redirectUrl) {
+    if (redirectUrl) {
+        if (typeof redirectUrl === 'string') {
+            const router = inject(Router);
+            return router.navigateByUrl(redirectUrl);
+        }
+        else {
+            return redirectUrl;
+        }
+    }
+    return false;
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidXRpbHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9wcm9qZWN0cy9hbmd1bGFyLXVubGVhc2gtcHJveHktY2xpZW50L3NyYy9saWIvZ3VhcmRzL3V0aWxzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBRSxNQUFNLEVBQVcsTUFBTSxpQkFBaUIsQ0FBQztBQUNsRCxPQUFPLEVBQUUsTUFBTSxFQUFFLE1BQU0sZUFBZSxDQUFDO0FBRXZDLE1BQU0sVUFBVSxjQUFjLENBQUMsV0FBOEI7SUFDM0QsSUFBSSxXQUFXLEVBQUU7UUFDZixJQUFJLE9BQU8sV0FBVyxLQUFLLFFBQVEsRUFBRTtZQUNuQyxNQUFNLE1BQU0sR0FBRyxNQUFNLENBQUMsTUFBTSxDQUFDLENBQUM7WUFDOUIsT0FBTyxNQUFNLENBQUMsYUFBYSxDQUFDLFdBQVcsQ0FBQyxDQUFDO1NBQzFDO2FBQU07WUFDTCxPQUFPLFdBQVcsQ0FBQztTQUNwQjtLQUNGO0lBQ0QsT0FBTyxLQUFLLENBQUM7QUFDZixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgUm91dGVyLCBVcmxUcmVlIH0gZnJvbSAnQGFuZ3VsYXIvcm91dGVyJztcbmltcG9ydCB7IGluamVjdCB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuXG5leHBvcnQgZnVuY3Rpb24gcmVkaXJlY3RSZXN1bHQocmVkaXJlY3RVcmw/OiBzdHJpbmcgfCBVcmxUcmVlKTogVXJsVHJlZSB8IFByb21pc2U8Ym9vbGVhbj4gfCBib29sZWFuIHtcbiAgaWYgKHJlZGlyZWN0VXJsKSB7XG4gICAgaWYgKHR5cGVvZiByZWRpcmVjdFVybCA9PT0gJ3N0cmluZycpIHtcbiAgICAgIGNvbnN0IHJvdXRlciA9IGluamVjdChSb3V0ZXIpO1xuICAgICAgcmV0dXJuIHJvdXRlci5uYXZpZ2F0ZUJ5VXJsKHJlZGlyZWN0VXJsKTtcbiAgICB9IGVsc2Uge1xuICAgICAgcmV0dXJuIHJlZGlyZWN0VXJsO1xuICAgIH1cbiAgfVxuICByZXR1cm4gZmFsc2U7XG59XG4iXX0=

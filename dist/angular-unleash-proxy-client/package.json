@@ -1,0 +1,49 @@
+{
+  "name": "@karelics/angular-unleash-proxy-client",
+  "version": "15.1.0",
+  "peerDependencies": {
+    "@angular/common": ">=15.0.0",
+    "@angular/core": ">=15.0.0",
+    "unleash-proxy-client": "^2.4.3"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "description": "Angular wrapper for [unleash-proxy-client](https://github.com/Unleash/unleash-proxy-client-js).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karelics/angular-unleash-proxy-client.git"
+  },
+  "keywords": [
+    "angular",
+    "unleash",
+    "unleash-proxy-client"
+  ],
+  "author": "Karelics Oy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Karelics/angular-unleash-proxy-client/issues"
+  },
+  "homepage": "https://github.com/Karelics/angular-unleash-proxy-client#readme",
+  "module": "fesm2015/karelics-angular-unleash-proxy-client.mjs",
+  "es2020": "fesm2020/karelics-angular-unleash-proxy-client.mjs",
+  "esm2020": "esm2020/karelics-angular-unleash-proxy-client.mjs",
+  "fesm2020": "fesm2020/karelics-angular-unleash-proxy-client.mjs",
+  "fesm2015": "fesm2015/karelics-angular-unleash-proxy-client.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/karelics-angular-unleash-proxy-client.mjs",
+      "es2020": "./fesm2020/karelics-angular-unleash-proxy-client.mjs",
+      "es2015": "./fesm2015/karelics-angular-unleash-proxy-client.mjs",
+      "node": "./fesm2015/karelics-angular-unleash-proxy-client.mjs",
+      "default": "./fesm2020/karelics-angular-unleash-proxy-client.mjs"
+    }
+  }
+}
